@@ -1,3 +1,21 @@
+function countdown() { //Defining a function
+  var seconds = document.getElementById("seconds").value;
+
+  function tick() { //Defining a function
+    seconds= seconds - 1; 
+    timer.innerHTML = seconds; //Timer will count down by 1 second
+    var time = setTimeout(tick, 1000);
+    if (seconds == -1) {
+      alert("Time's up!"); //Alert will pop up to notify that timer is done
+      clearTimeout(time);
+      timer.innerHTML= "";
+    }
+  }
+  tick();
+}
+
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
