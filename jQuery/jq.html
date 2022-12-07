@@ -5,8 +5,8 @@
 </head>
 
 <script>
-$(document).ready(function(){
-	$("html").append(
+$(document).ready(function(){ //When document is ready it will perform a function
+	$("html").append( //The browser will show the content of the body
 		"<body>\
 			<div id='container'>\
 				<div id='inner'>\
@@ -18,8 +18,8 @@ $(document).ready(function(){
 			</div>\
 		</body>"
 	);
-	$("#2").css({"color":"red"});
-	$("#3").click(function() {
+	$("#2").css({"color":"red"}); //Change font color of p2 to red
+	$("#3").click(function() { //When p3 is clicked on, h1 will be hidden
 		$("h1").hide();
 	});
 });
